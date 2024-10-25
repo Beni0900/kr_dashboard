@@ -151,6 +151,11 @@ const App = () => {
       }
     } else {
       if (container) {
+        setPremiumItems([]);
+        setSettings([]);
+        setCarlist([]);
+        setUserInfo([]);
+        setBottomInfo([]);
         container.style.opacity = "0.0";
         setTimeout(() => {
           container.style.display = "none";

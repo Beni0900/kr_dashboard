@@ -1,3 +1,17 @@
+RegisterCommand("setPremium", function(source, args, rawCommand)
+	local targetSource = tonumber(args[1])
+	local amount = tonumber(args[2])
+	local playerId = Player(targetSource).state.identifier
+
+	if amount and targetSource then
+			DB:UpdatePremium(playerId, amount)
+			print("Siker!")
+	else
+			print("Nem  adott meg egy értéket a premiumnak")
+
+	end
+end, false)
+
 lib.callback.register('kr_dashboard->buyPremiumItem', function(source, itemName)
 	local source = source
 	local xPlayer = ESX.GetPlayerFromId(source)
