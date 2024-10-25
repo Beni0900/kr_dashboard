@@ -1,0 +1,60 @@
+.homeContainer {
+  width: 100%;
+  height: auto;
+
+  div {
+    display: flex;
+  }
+
+  .homeText {
+    width: 99.3%;
+    height: 4.5vh;
+    border: 0.3vh solid black;
+    background-color: #2d2d2d;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1.5vh 0;
+
+    p {
+      margin: 0;
+      color: white;
+      font-size: 2vh;
+      margin-left: 2vh;
+      letter-spacing: 0.3vh;
+    }
+  }
+
+  .availableFactions {
+    justify-content: center;
+    p {
+      margin: 0;
+    }
+  }
+
+  .customPolice {
+    border: none;
+    background-color: transparent;
+    height: 3vh;
+    margin-bottom: 1.5vh;
+  }
+
+  .customAmbulance {
+    border: none;
+    background-color: transparent;
+    height: 3vh;
+    margin-bottom: 0vh;
+  }
+
+  .customBottom {
+    border: none;
+    background-color: transparent;
+    width: 50%;
+    height: 3vh;
+
+    p {
+      width: 100%;
+    }
+  }
+}
